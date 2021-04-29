@@ -1,0 +1,37 @@
+.wrapper {
+  padding: 20px 15px;
+  margin: 0 auto;
+  max-width: 1170px;
+  .nav{
+    display: flex;
+    padding-left: 0;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 18px;
+    text-transform: uppercase;
+    &__logo{
+      width: 256px;
+      height: 80px;
+    }
+    &__menu{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &__link{
+      padding-left: 20px;
+      margin-left: 20px;
+      list-style-type: none;
+    }
+    &__content{
+      text-decoration: none;
+      color: $white;
+      border-bottom: 1px solid  $bluelight;
+    }
+    &__content:hover{
+      color: $bluelight;
+      border-bottom: none;
+    }
+  }
+  
+}

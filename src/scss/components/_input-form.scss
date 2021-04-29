@@ -1,0 +1,92 @@
+.container{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  max-width: 900px;
+}
+.form{
+  width: 30%;
+  padding: 0;
+  margin-left: 600px;
+  
+  .autocomplete{
+    position: relative;
+    left: 0;
+    top: 5px;
+    width: 100%;
+    background: none;
+    list-style: none;
+    color: $white;
+    margin: 0;
+    padding: 0;
+    box-shadow: 1px 1px 5px rgba(255, 255, 255, .15);
+    z-index: 111;
+    max-height: 240px;
+    height: auto;
+    overflow: auto;
+    
+    &__item{
+      padding: 10px;
+    }
+    &__item:hover{
+      color: $rose;
+      cursor: pointer;
+      transition: cubic-bezier(1, 0, 0, 1) .3s all;
+    }
+    
+  }
+  .search__country{
+    width: 200px;
+  }
+    .country__input{
+      background: none;
+      padding: 5px 16px;
+      border: 1px solid $greyrgba;
+      border-radius: 3px;
+      font-size: 18px;
+      font-weight: 300;
+      font-style: italic;
+      color: $white;
+      text-align: left;
+      width: 200px;
+    }
+    .country__input:focus{
+      background: none;
+      border: 1px solid $white;
+    }
+    .country__icon{
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      color: $grey;
+      margin-left: 60px;
+      top: 17%;
+    }
+    .countries{
+      display: none;
+      border: 1px solid $white;
+      background: $white;
+      width: 300px;
+      height: 300px;
+    }
+    .countries>li{
+      color: $black;
+    }
+    .countries>li>img{
+      width: 10px;
+      height: 10px;
+    }
+}
+::-webkit-scrollbar{
+  width: 10px;
+}
+::-webkit-scrollbar-thumb{
+  border-radius: 30px;
+  background: -webkit-gradient(linear, left top, left bottom, from($rose), 
+  to($yellow));
+  box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .25), inset -2px -2px -2px rgba(0, 0, 0, .25) ;
+}
+::-webkit-scrollbar-track{
+  background: $blue;
+}
